@@ -1,28 +1,27 @@
-# Automated File Organizer (Image Mover)
+# 📂 File Automator (Python)
 
-A Python utility designed to automate the tedious task of sorting files. This script specifically identifies `.jpg` images in a cluttered source directory and moves them to a clean destination folder, creating the destination automatically if it doesn't already exist.
+A practical automation utility built to streamline directory management. This script scans a source folder for specific file types and migrates them to a designated destination, ensuring a clean and organized workspace.
 
 ## 🚀 Features
-*   **Path Validation:** Prompts the user for source and destination paths, handling extra spaces with `.strip()`.
-*   **Auto-Folder Creation:** Checks if the destination folder exists and creates it if necessary using `os.makedirs`.
-*   **Efficient Moving:** Uses the `shutil` library to move files safely across the file system.
-*   **Real-time Feedback:** Prints a confirmation message for every file successfully moved.
+* **Targeted Migration:** Automatically identifies and moves .jpg files (easily extensible to other formats).
+* **Dynamic Directory Handling:** Uses os.path.join to ensure compatibility across Windows, macOS, and Linux.
+* **Smart Folder Creation:** Automatically detects if the destination folder exists; if not, it creates it on the fly.
+* **Real-time Feedback:** Provides console output for every file moved.
 
 ## 🛠️ How It Works
-1. The user inputs the directory path for the "Source" (where files are) and the "Destination" (where files should go).
-2. The script iterates through every file in the source directory.
-3. A logical check filters files ending in `.jpg`.
-4. The script joins the file name with the directory paths to create a full system path.
-5. Files are transferred, and a final success message is displayed.
+1. **User Input:** Prompts for the absolute paths of the Source and Destination folders.
+2. **Safety Check:** Verifies and creates the destination directory if missing.
+3. **Execution:** Moves matching files using shutil.move for a fast and safe transfer.
 
-## 💻 Tech Stack
-*   **Language:** Python 3.x
-*   **Libraries:** `os` (File system navigation), `shutil` (High-level file operations)
+## 📝 Future Roadmap
+[ ] Multi-format Support: Modify the script to move .png, .pdf, or .docx files simultaneously.
+[ ] File Renaming: Add a timestamp to files during the move to avoid overwriting files with the same name.
+[ ] Logging: Generate a session log file (move_log.txt) of all moved items for audit purposes.
+[ ] GUI Implementation: Build a simple interface using Tkinter for easier folder selection.
 
-## 📂 Example Usage
-```text
-Enter the Source Folder Location: C:/Users/Downloads
-Enter the Destination Folder Location: C:/Users/Pictures/Holiday_Photos
-Moved: photo1.jpg
-Moved: sunset.jpg
-All .jpg files moved successfully...
+## ⚙️ Installation & Usage
+1. Clone the repository:
+git clone https://github.com/tushardaga69-official/File-Automator-Python.git
+
+2. Run the script:
+python file_mover.py
