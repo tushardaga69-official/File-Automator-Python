@@ -15,8 +15,11 @@ A practical automation utility built to streamline directory management. This sc
 
 ## 📝 Future Roadmap
 [ ] Multi-format Support: Modify the script to move .png, .pdf, or .docx files simultaneously.
+
 [ ] File Renaming: Add a timestamp to files during the move to avoid overwriting files with the same name.
+
 [ ] Logging: Generate a session log file (move_log.txt) of all moved items for audit purposes.
+
 [ ] GUI Implementation: Build a simple interface using Tkinter for easier folder selection.
 
 ## ⚙️ Installation & Usage
