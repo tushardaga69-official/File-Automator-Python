@@ -24,7 +24,7 @@ A practical automation utility built to streamline directory management. This sc
 
 ## ⚙️ Installation & Usage
 1. Clone the repository:
-git clone https://github.com/tushardaga69-official/File-Automator-Python.git
+git clone https://github.com/tushardaga69-official/CodeAlpha_File-Automator-Python
 
 2. Run the script:
 python file_mover.py
